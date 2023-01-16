@@ -7,7 +7,7 @@ import Scrollspy from 'react-scrollspy';
 // npm install react-router-dom
 // npm install react-bootstrap bootstrap
 //npm i react-scrollspy
-function Navi() {
+const Navi = () => {
     return (
         <div className={ `${navicss.hd} fixed-top border-bottom py-3 px-4 bg-white d-flex justify-content-between align-items-center` }>
             <h1>
