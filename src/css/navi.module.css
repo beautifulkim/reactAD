@@ -1,3 +1,4 @@
 .hd {
     background-color: red;
 }
+.hd h1 img { display: block; height: 2.5rem;  }
