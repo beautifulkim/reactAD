@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
-function Example() {
+function Toggle() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -25,4 +25,4 @@ function Example() {
   );
 }
 
-render(<Example />);
+render(<Toggle />);
