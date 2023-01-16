@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../logo.svg';
 import navicss from '../css/navi.module.css';
 import { Link } from 'react-router-dom';
@@ -8,8 +8,12 @@ import Scrollspy from 'react-scrollspy';
 // npm install react-bootstrap bootstrap
 //npm i react-scrollspy
 const Navi = () => {
+    const [ colorMode, updateColor] = useState( true );
+
     return (
-        <div className={ `${navicss.hd} fixed-top border-bottom py-3 px-4 bg-white d-flex justify-content-between align-items-center` }>
+    <div className={ colorMode ? 'lightmode fixed-top' : 'darkmode fixed-top' }>
+        <div className={ `${navicss.hd} border-bottom py-3 px-4 d-flex justify-content-between align-items-center
+        ` }>
             <h1>
                 <Link to="/">
                     <img src={ logo } />
@@ -24,8 +28,16 @@ const Navi = () => {
             <ul id="sns" className='d-flex'>
                 <li><a href='http://www.youtube.com' target='_blank'>유튜브</a></li>
                 <li><a href='http://www.youtube.com' target='_blank'>자료실</a></li>
+                <li>
+                    <button onClick={ () => {
+                        updateColor( !colorMode )
+                    } }>
+                        { colorMode ? '다크' : '라이트' }
+                    </button>
+                </li>
             </ul>
         </div>
+    </div>
     );
 }
 

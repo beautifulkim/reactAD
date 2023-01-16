@@ -29,3 +29,9 @@ body{
     font-size: 14px;  
   }  
 }
+
+.darkmode { background-color: #333; }
+.darkmode a { color: #fff !important }
+
+.lightmode { background-color: #fff; }
+.lightmode a { color: #333 !important }

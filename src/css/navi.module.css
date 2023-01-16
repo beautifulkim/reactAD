@@ -2,7 +2,6 @@
 a { color: #333; text-decoration: none; }
 li { list-style: none; }
 .hd {
-    background-color: red;
 }
 .hd h1 img { display: block; height: 2.5rem;  }
 .hd * { margin-bottom: 0; }
