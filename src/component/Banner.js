@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
@@ -11,7 +12,7 @@ function Banner() {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 1</SwiperSlide> 
             <SwiperSlide>Slide 2</SwiperSlide>
             <SwiperSlide>Slide 3</SwiperSlide>
             
